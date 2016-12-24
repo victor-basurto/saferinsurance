@@ -1,0 +1,139 @@
+// ic-browser.scss
+
+#ic-browser {
+  @include margin(0 auto);
+  @include padding(20px null);
+  color: #ffffff;
+  font-size: .9em;
+
+  .inner {
+    header, .browsers {
+      width: 75%;
+      @include margin(20px auto);
+      @include padding(20px);
+      background-color: $color-gray-dark;
+      text-align: center;
+
+      img {
+        width: 50%;
+        max-width: 200px;
+      }
+
+      h1, h3, h4 {
+        @include margin(10px);
+        text-transform: uppercase;
+      }
+
+      h1, h4 {
+        font-weight: 700;
+      }
+
+      h4 {
+        letter-spacing: 2px;
+      }
+
+      p {
+        font-size: 1.25em;
+        font-family: "Arial", sans-serif;
+        color: #aaaaaa;
+      }
+
+    }
+
+    header {
+      p {
+        @include margin(20px 10px);
+      }
+
+      img {
+        @include margin(30px null);
+      }
+    }
+
+
+    .browsers {
+      > p {
+        @include margin(10px 10px 20px);
+      }
+
+      > div {
+        a {
+          display: block;
+          width: 550px;
+          max-width: 90%;
+          @include margin(null auto);
+          @include padding(15px null);
+          border-top: 1px solid #333333;
+
+          &:hover {
+            background-color: #ffffff;
+            transition-duration: .25s;
+
+            > * {
+              color: $color-primary;
+            }
+          }
+
+          > * {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+            height: 43px;
+          }
+
+          p {
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 1.5em;
+          }
+
+          p.icon {
+            width: 100px;
+          }
+
+          p.text {
+            width: 200px;
+            padding-top: 25px;
+          }
+
+          button {
+            width: 200px;
+            border: none;
+            background-color: #ffffff;
+            text-transform: uppercase;
+            font-size: .9rem;
+            text-align: center;
+
+            &:hover {
+              color: #ffffff;
+              background-color: $color-primary;
+              transition-duration: .25s;
+            }
+
+            i {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #ic-browser {
+    .inner {
+      header, .browsers {
+        @include margin(10px auto);
+      }
+
+      .browsers > div > a {
+        > * {
+          display: block;
+          @include margin(0 auto);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

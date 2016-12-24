@@ -1,0 +1,90 @@
+// foundation.scss
+
+// global fixes
+
+*:focus {
+  outline:0;
+}
+
+// sizing configuration
+
+html, body, #main, .page {
+  box-sizing: border-box;
+}
+
+html, body, #main {
+  @include size(100% 100vh);
+}
+
+html {
+  body {
+    overflow-y: hidden;
+    background-color: $color-light;
+  }
+}
+
+// base links
+
+a {
+  text-decoration: none;
+
+  &:hover {
+  }
+}
+
+// base various original ements
+
+em, caption {
+  font-style: italic;
+}
+
+blockquote {
+}
+
+strong {
+  font-weight: 700;
+}
+
+// global fixes for ng tabs
+
+ng-md-icon {
+  fill: currentColor;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+}
+
+// md-backdrop edits
+
+md-backdrop.md-opaque {
+  opacity: .65;
+  background-color: rgba(20,20,20,1.0);
+}
+
+
+// media queries
+
+@media (min-width: 600px) {
+  // scroll bar
+  ::-webkit-scrollbar {
+      -webkit-appearance: none;
+  }
+
+  ::-webkit-scrollbar:vertical {
+      width: 12px;
+  }
+
+  ::-webkit-scrollbar:horizontal {
+      height: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, .5);
+      border-radius: 10px;
+      border: 2px solid #ffffff;
+  }
+
+  ::-webkit-scrollbar-track {
+      background-color: #ffffff;
+  }
+}

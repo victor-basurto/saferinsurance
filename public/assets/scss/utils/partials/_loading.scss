@@ -1,0 +1,14 @@
+// loading.scss
+
+// http loader on top
+
+#loading-bar .bar {
+  background: #ffffff;
+  height: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+
+#loading-bar-spinner .spinner-icon {
+  border-top-color: #ffffff;
+  border-left-color: #ffffff;
+}

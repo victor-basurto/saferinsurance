@@ -1,0 +1,57 @@
+{
+  "name": "saferinsurance",
+  "version": "0.0.1",
+  "description": "A website for Safer Insurance Agency, located in San Diego, California and Tijuana, Mexico. Safer Insurance stands with a ten-year presence in Auto Insurance services, with six locations and a wide variety of insurance services and related services.",
+  "homepage": "//www.saferinsurance.net/",
+  "repository": {
+    "type": "git",
+    "url": "//github.com/saganzander/saferinsurance.git"
+  },
+  "contributors": [
+    {
+      "name": "James Walrath",
+      "email": "james@aegonux.com",
+      "url": "//github.com/saganzander"
+    },
+    {
+      "name": "Victor Basurto",
+      "email": "victor@aegonux.com",
+      "url": "//github.com/victor-basurto"
+    }
+  ],
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.2",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "debug": "^2.0.0",
+    "dotenv": "^2.0.0",
+    "ejs": "^0.8.5",
+    "express": "^4.5.1",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.14.1",
+    "method-override": "^2.0.2",
+    "moment": "*",
+    "mongodb": "^2.0",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1",
+    "multer": "*",
+    "nodemailer": "~2.4.2",
+    "sendgrid": "^4.0.1"
+},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "merge-stream": "^1.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+// layers.scss
+
+#header { z-index: 45; }
+.page.ng-enter { z-index: 51; }
+.page.ng-leave { z-index: 52; }
+.md-sidenav-left { z-index: 60; }

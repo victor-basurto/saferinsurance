@@ -1,0 +1,25 @@
+// buttons.scss
+
+.md-button {
+//  font-family: $font-primary;
+
+  &:hover, &:focus {
+    color: inherit;
+  }
+}
+
+.md-button.md-simple-button {
+}
+
+.md-button.md-cta-button {
+}
+
+.md-button.md-icon-button {
+}
+
+.md-button.md-stripped-button {
+}
+
+.md-button.sharp-corners {
+  @include sharp-corners();
+}

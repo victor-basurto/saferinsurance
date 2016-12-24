@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="saferInsuranceApp" ng-cloak>
+  <head><% include ../../partials/head/_all.ejs %></head>
+  <body ng-controller="AppCtrl">
+    <!-- working viewport -->
+    <div id="main" ng-hide="icBrowser">
+      <!-- primary ui-view -->
+      <div ui-view class="page {{page}}-page" autoscroll="true"></div>
+    </div>
+    <% include ../../partials/content/ic-browser %>
+    <% include ../../partials/scripts/_all.ejs %>
+  </body>
+</html>

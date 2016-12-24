@@ -1,0 +1,11 @@
+// toasts.scss
+
+.md-toast-content {
+//  font-family: $font-content;
+}
+
+@media (max-width: 960px) {
+  .md-toast-content {
+    border-radius: 0 !important;
+  }
+}

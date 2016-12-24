@@ -1,0 +1,24 @@
+<!-- Incompatible Browser -->
+<div id="ic-browser" ng-controller="IcBrowserCtrl" ng-show="icBrowser">
+  <div class="inner">
+    <header>
+      <img src="/assets/img/core/logo/light.svg"/>
+      <h1>Uh Oh...</h1>
+      <h3>{{browser}} is not supported.</h3>
+      <p ng-if="msie">If you like Internet Explorer, it's been replaced by <strong>Microsoft Edge</strong>.</p>
+      <p ng-if="!msie">It may be outdated!</p>
+    </header>
+    <div class="browsers">
+      <h4>It's time to change browsers!</h4>
+      <p>Here are many options of modern web browsers:</p>
+      <div ng-repeat="browser in browsers">
+        <a href="{{browser.href}}" target="_blank"
+         title="download {{browser.name}}">
+          <p class="icon"><i class="fa fa-{{browser.name}} fa-2x"></i></p><!--
+          --><p class="text">{{browser.name}}</p><!--
+          --><button>download page<i class="fa fa-download"></i></button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
