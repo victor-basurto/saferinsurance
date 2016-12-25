@@ -1,12 +1,13 @@
 // typography.scss
-// @import url('');
+@import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700|Open+Sans:300,400,400i,700,700i');
 
-// $font-primary: "SOMETHING", "Arial", sans-serif;
-// $font-content: "SOMETHING", "Calibri", serif;
-// $font-mono: "Inconsolata", Courier, monospace;
+$font-primary: "News Cycle", "Arial", sans-serif;
+$font-content: "Open Sans", "Calibri", serif;
+$font-mono: "Inconsolata", Courier, monospace;
 
-* {
-//  font-family: $font-content;
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  font-family: $font-content;
 }
 
 small {
@@ -15,29 +16,40 @@ small {
 }
 
 h1, h2, h3, h4, h5, h6 {
-//  font-family: $font-primary;
+  font-family: $font-primary;
 }
 
-h1 {
-  font-size: 2.35em;
+h1 { font-size: 2.35em; }
+h2 { font-size: 2.15em; }
+h3 { font-size: 1.8em; }
+h4 { font-size: 1.45em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: .75em; }
+
+p {
+  line-height: 1.25em;
 }
 
-h2 {
-  font-size: 1.75em;
-}
+blockquote {
+  padding-left: 15px;
+  border-left: 5px solid $color-light;
 
-h3 {
-  font-size: 1.9em;
-}
+  p {
+    font-size: italic;
+  }
 
-h4 {
-  font-size: 1.45em;
-}
+  .quote-divider {
+    @include size(100px 3px);
+    @include margin(7px null);
+    background-color: $color-primary-light;
+  }
 
-h5 {
-  font-size: 1em;
-}
+  .credit {
+    font-family: $font-primary;
+    text-transform: uppercase;
 
-h6 {
-  font-size: .75em;
+    &::before {
+      content: "- ";
+    }
+  }
 }

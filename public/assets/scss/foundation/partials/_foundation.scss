@@ -9,18 +9,24 @@
 // sizing configuration
 
 html, body, #main, .page {
+  width: 100%;
   box-sizing: border-box;
 }
 
 html, body, #main {
-  @include size(100% 100vh);
+  height: 100%;
 }
 
-html {
-  body {
-    overflow-y: hidden;
-    background-color: $color-light;
-  }
+body {
+  background-color: $color-light;
+}
+
+#main {
+  overflow-y: scroll;
+}
+
+.page {
+  min-height: 100%;
 }
 
 // base links
