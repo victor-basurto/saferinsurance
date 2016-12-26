@@ -3,6 +3,10 @@ const router = express.Router();
 
 // meta info
 const siteMeta = {
+  primaryColor: '#3DA5F2',
+  ico32: '/assets/img/core/fav/32/main.ico?v=2',
+  png192: '/assets/img/core/fav/192/main.png',
+  png310: '/assets/img/core/fav/310/main.png',
   siteTitle: 'Safer Insurance',
   siteUrl: 'SITEURL',
   siteDescription: 'DESCRIPTION',

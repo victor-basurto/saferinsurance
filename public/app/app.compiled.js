@@ -1,4 +1,5 @@
 // example
+// example
 // AppCtrl
 app.controller('AppCtrl', function($rootScope, $scope) {
   $scope.browser = bowser.name;
@@ -50,7 +51,13 @@ app.controller('IcBrowserCtrl', function($scope) {
 });
 // example
 // example
-// example
+// WelcomeCtrl
+app.controller('WelcomeCtrl', function($scope) {
+  $scope.page = 'welcome';
+
+  // end of WelcomeCtrl
+  // console.log('Loaded WelcomeCtrl');
+});
 // StyleGuideCtrl
 app.controller('StyleGuideCtrl', function($scope) {
   // array of logo refs
@@ -65,11 +72,4 @@ app.controller('StyleGuideCtrl', function($scope) {
 
   // end of StyleGuideCtrl
   // console.log('Loaded StyleGuideCtrl');
-});
-// WelcomeCtrl
-app.controller('WelcomeCtrl', function($scope) {
-  $scope.page = 'welcome';
-
-  // end of WelcomeCtrl
-  // console.log('Loaded WelcomeCtrl');
 });
