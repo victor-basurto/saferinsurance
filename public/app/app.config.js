@@ -29,6 +29,12 @@ app.config(function(
       url: '/',
       templateUrl: 'app/components/welcome/welcome.html',
       controller: 'WelcomeCtrl'
+    })
+    // style guide route
+    .state('style-guide', {
+      url: '/style-guide',
+      templateUrl: 'app/components/style-guide/style-guide.html',
+      controller: 'StyleGuideCtrl'
     });
 
   // end of app.config
