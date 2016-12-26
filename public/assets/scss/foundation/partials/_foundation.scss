@@ -27,6 +27,7 @@ body {
 
 .page {
   min-height: 100%;
+  font-size: .85em;
 }
 
 // base links
@@ -50,6 +51,15 @@ blockquote {
 strong {
   font-weight: 700;
 }
+
+// text selection color
+::selection {
+  background: $color-accent;
+}
+::-moz-selection {
+  background: $color-accent;
+}
+
 
 // global fixes for ng tabs
 
@@ -92,5 +102,11 @@ md-backdrop.md-opaque {
 
   ::-webkit-scrollbar-track {
       background-color: #ffffff;
+  }
+}
+
+@media (min-width: 600px) {
+  .page {
+    font-size: 1em;
   }
 }

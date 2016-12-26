@@ -23,12 +23,11 @@ router.route('/')
 
 // basic json getters
 
-/*
- router.route('/sidenav.json')
+router.route('/main-nav.json')
   .get(function(req, res){
-    res.sendFile(path.resolve('./app/data/sidenav.json'));
+    res.sendFile(path.resolve('./app/data/main-nav.json'));
+    console.log('loaded');
   });
-*/
 
 // thing1s api
 

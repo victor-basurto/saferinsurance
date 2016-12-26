@@ -48,3 +48,5 @@ public/assets/img/edits
 #Ignore Adobe Edits
 *.psd
 *.ai
+*-og.jpg
+*-og.png

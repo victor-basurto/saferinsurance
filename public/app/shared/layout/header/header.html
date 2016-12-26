@@ -1,0 +1,11 @@
+<div id="header" ng-controller="HeaderCtrl" layout="row" layout-align="start center">
+  <md-button class="md-icon-button" hide-gt-sm layout="column" layout-align="center center" ng-click="null" aria-label="Toggle navigation menu">
+    <ng-md-icon class="md-icon" icon="menu"></ng-md-icon>
+  </md-button>
+  <div flex flex-order-gt-sm="3"></div>
+  <div class="logo" flex-order-gt-sm="1">
+    <img src="/assets/img/core/logo/main.svg" alt="Safer Insurance Agency logo">
+  </div>
+  <nav ng-include="'/app/shared/layout/header/partials/nav.html'" hide-sm hide-xs flex-order-gt-sm="2"></nav>
+  <div ng-include="'/app/shared/layout/header/partials/ctas.html'" hide-sm hide-xs flex-order-gt-sm="4"></div>
+</div>

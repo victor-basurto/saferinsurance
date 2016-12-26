@@ -1,4 +1,81 @@
 // welcome.scss
 
 #welcome {
+  > div, > section {
+    width: 100%;
+  }
+
+  .feature {
+    @include size(100% 500px);
+    max-height: 80vh;
+    background-image: url('/assets/img/core/bgs/freeway.jpg');
+    @include image-cover(fixed);
+
+    > .content {
+      @include size(100%);
+      @include padding(20px);
+
+      img {
+        width: 300px;
+        margin-bottom: 30px;
+      }
+
+      header {
+        margin-bottom: 50px;
+        text-align: center;
+
+        h3, h1 {
+          margin-bottom: 20px;
+          text-shadow: 0 0 20px #fff, 0 0 5px #fff;
+          font-weight: 700;
+        }
+
+        h3 {
+          font-size: 1.35em;
+        }
+      }
+
+      .md-button {
+        border-color: #fff;
+        background-color: #fff;
+        @include box-shadow-hover();
+
+        &:hover, &:focus {
+          background-color: #fff !important;
+          border-color: $color-primary;
+          color: $color-primary;
+        }
+      }
+
+    }
+  }
+
+  .insurance {
+    > header {
+      font-size: .9em;
+      @include padding(40px 15px);
+
+      h1 {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        font-weight: 300;
+        font-family: $font-content;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  #welcome {
+    .feature {
+      > .content {
+        header h3 {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
 }

@@ -92,9 +92,9 @@ conn.once('open', function() {
   });
 
   // route middleware
-  app.use('/', routes);
-  app.use('/users', users);
   app.use('/api', api);
+  app.use('/users', users);
+  app.use('/', routes);
 
   // port middleware
   app.set('port', port);

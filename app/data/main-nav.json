@@ -1,0 +1,246 @@
+[
+  {
+    "name": "insurance",
+    "items": [
+      {
+        "abbr": "auto",
+        "name": "Auto & Recreational",
+        "items": [
+          {
+            "name": "General Auto Insurance",
+            "icon": "drive_eta",
+            "href": "/insurance/auto/general"
+          },
+          {
+            "name": "Mexican Auto Insurance",
+            "icon": "drive_eta",
+            "href": "/insurance/auto/mexican"
+          },
+          {
+            "name": "Classic Auto Insurance",
+            "icon": "drive_eta",
+            "href": "/insurance/auto/classic"
+          },
+          {
+            "name": "Motorcycle Insurance",
+            "icon": "motorcycle",
+            "href": "/insurance/auto/motorcycle"
+          },
+          {
+            "name": "Recreational Vehicle Insurance",
+            "icon": "rv_hookup",
+            "href": "/insurance/auto/recreational"
+          },
+          {
+            "name": "Tow Truck Insurance",
+            "icon": "directions_bus",
+            "href": "/insurance/auto/tow-truck"
+          },
+          {
+            "name": "Watercraft Insurance",
+            "icon": "directions_ferry",
+            "href": "/insurance/auto/watercraft"
+          },
+          {
+            "name": "ATV Insurance",
+            "icon": "terrain",
+            "href": "/insurance/auto/atv"
+          }
+        ]
+      },
+      {
+        "abbr": "home",
+        "name": "Home & Health",
+        "items": [
+          {
+            "name": "Home Insurance",
+            "icon": "home",
+            "href": "/insurance/property/homeowner"
+          },
+          {
+            "name": "Renter's Insurance",
+            "icon": "home",
+            "href": "/insurance/property/renters"
+          },
+          {
+            "name": "Health Insurance",
+            "icon": "healing",
+            "href": "/insurance/personal/health"
+          },
+          {
+            "name": "Life Insurance",
+            "icon": "nature_people",
+            "href": "/insurance/personal/life"
+          }
+        ]
+      },
+      {
+        "abbr": "commercial",
+        "name": "Commercial & Professional",
+        "items": [
+          {
+            "name": "Commercial Auto Insurance",
+            "icon": "airport_shuttle",
+            "href": "/insurance/commercial/auto"
+          },
+          {
+            "name": "Business Owners Policy (BOP)",
+            "icon": "store",
+            "href": "/insurance/commercial/bop"
+          },
+          {
+            "name": "Professional Liability Insurance (E&O)",
+            "icon": "business",
+            "href": "/insurance/professional"
+          },
+          {
+            "name": "Surety Bonds",
+            "icon": "note",
+            "href": "/insurance/commercial/bonds"
+          },
+          {
+            "name": "Worker's Compensation",
+            "icon": "business_center",
+            "href": "/insurance/commercial/workers-compensation"
+          }
+        ]
+      },
+      {
+        "abbr": "other",
+        "name": "Other Insurance",
+        "items": [
+          {
+            "name": "Travel Insurance",
+            "icon": "card_travel",
+            "href": "/insurance/other/travel"
+          },
+          {
+            "name": "Special Event Insurance",
+            "icon": "local_activity",
+            "href": "/insurance/other/special-event"
+          },
+          {
+            "name": "Pet Insurance",
+            "icon": "pets",
+            "href": "/insurance/other/pet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "services",
+    "items": [
+      {
+        "abbr": "paperwork",
+        "name": "Paperwork",
+        "items": [
+          {
+            "name": "DMV Registration Services",
+            "icon": "note",
+            "href": "/insurance/paperwork/dmv-registration"
+          },
+          {
+            "name": "Instant SR-22 (Certificate of Financial Responsibility)",
+            "icon": "note",
+            "href": "/insurance/paperwork/dmv-registration"
+          },
+          {
+            "name": "International License Services",
+            "icon": "portrait",
+            "href": "/insurance/paperwork/international-license"
+          },
+          {
+            "name": "Permit Services",
+            "icon": "note",
+            "href": "/insurance/paperwork/dmv-registration"
+          }
+        ]
+      },
+      {
+        "abbr": "assistance",
+        "name": "Assistance",
+        "items": [
+          {
+            "name": "Roadside Assitance",
+            "icon": "directions",
+            "href": "/insurance/assistance/roadside-assistance"
+          },
+          {
+            "name": "Export Services",
+            "icon": "local_shipping",
+            "href": "/insurance/assistance/export-services"
+          },
+          {
+            "name": "Merchandise Trade",
+            "icon": "local_shipping",
+            "href": "/insurance/assistance/merchandise-trade"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "about",
+    "items": [
+      {
+        "abbr": "who",
+        "name": "Who We Are",
+        "items": [
+          {
+            "name": "About SIA",
+            "icon": "info_outline",
+            "href": "/about"
+          },
+          {
+            "name": "Our History",
+            "icon": "history",
+            "href": "/about/history"
+          }
+        ]
+      },
+      {
+        "abbr": "locations",
+        "name": "Locations & Resources",
+        "items": [
+          {
+            "name": "All our locations",
+            "icon": "location_city",
+            "href": "/about/locations/all"
+          },
+          {
+            "name": "Locations near you",
+            "icon": "my_location",
+            "href": "/about/locations/near"
+          },
+          {
+            "name": "External Resources",
+            "icon": "public",
+            "href": "/about/locations/near"
+          }
+        ]
+      },
+      {
+        "abbr": "help",
+        "name": "Help & Questions",
+        "items": [
+          {
+            "name": "FAQs",
+            "icon": "question_answer",
+            "href": "/about/help/faqs"
+          },
+          {
+            "name": "Questions about quotes",
+            "icon": "help",
+            "href": "/about/help/quotes"
+          },
+          {
+            "name": "Contact our team",
+            "icon": "message",
+            "href": "/contact"
+          }
+        ]
+      }
+    ]
+  }
+]

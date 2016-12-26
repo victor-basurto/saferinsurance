@@ -10,8 +10,10 @@ const dependencies = [
   'ngMessages',
   'ngMaterial',
   'angular-loading-bar',
-  'angular-clipboard'
+  'angular-clipboard',
+  'saferInsuranceApp.directives'
 ];
 
 // application
 const app = angular.module('saferInsuranceApp', dependencies);
+const directives = angular.module('saferInsuranceApp.directives', []);

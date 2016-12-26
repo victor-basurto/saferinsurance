@@ -1,0 +1,22 @@
+<div class="main-nav" layout="row" ng-controller="MainNavCtrl">
+  <section class="{{menu.name}}" ng-repeat="menu in mainNav" ng-controller="NavSectionCtrl" ng-init="initNavSection(menu.name)" ng-mouseenter="showNavSection()" ng-mouseleave="hideNavSection()">
+    <md-button class="md-stripped-button" ng-click="null" aria-label="Open {{menu.name}} menu">
+      <h4>{{menu.name}}</h4>
+    </md-button>
+    <div class="nav-section-content" ng-if="showSection" ng-mouseenter="enterNavSection()" ng-mouseleave="leaveNavSection()">
+      <div class="submenus" layout="row">
+        <section ng-repeat="submenu in menu.items">
+          <h4>{{submenu.name}}</h4>
+          <div class="submenu">
+            <div ng-repeat="item in submenu.items">
+              <md-button class="md-stripped-button" layout="row" layout-align="center center" ng-click="null" aria-label="Go to {{item.icon}}">
+                <ng-md-icon class="md-icon" icon="{{item.icon}}" size="16"></ng-md-icon>
+                <div class="text">{{item.name}}</div>
+              </md-button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</div>

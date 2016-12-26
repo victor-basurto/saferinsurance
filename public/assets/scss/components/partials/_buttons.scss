@@ -12,8 +12,8 @@
     background-color: $color-gray-light !important;
   }
 
-  > *:not(:last-child) {
-    margin-right: 5px;
+  > * {
+    @include margin(null 3px);
   }
 }
 
@@ -54,9 +54,38 @@
 }
 
 .md-button.md-icon-button {
+  border-color: transparent;
+
+  &:hover, &:focus, &:active, &:visited {
+    color: inherit;
+    background-color: transparent !important;
+  }
+
+  .md-icon {
+  }
+
+  .md-ripple-container {
+    margin: 0;
+  }
 }
 
 .md-button.md-stripped-button {
+  min-width: 0;
+  min-height: 0;
+  @include margin(0);
+  @include padding(0);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+
+  .md-ripple-container {
+    border-radius: 0;
+  }
+
+  &:hover, &:focus {
+    color: inherit;
+    background-color: transparent !important;
+  }
 }
 
 .md-button.sharp-corners {
